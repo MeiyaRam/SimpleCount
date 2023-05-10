@@ -3,6 +3,7 @@ import './App.scss';
 import IncreaseCount from './components/IncreaseCount';
 import DecreaseCount from './components/DecreaseCount';
 import Input from './components/Input';
+import Select from './components/Select';
 
 const App = (context) => {
 	const { state } = context;
@@ -12,7 +13,9 @@ const App = (context) => {
 		<IncreaseCount { ...context }/>
 		<DecreaseCount { ...context }/><br/>
 		<Input { ...context }/><br/>
-		<div>Your Name is :{state.firstName}</div>
+		<div>Your Name is :{state.firstName}</div><br/>
+		<Select { ...context }/>
+		<div>Selected Country: {state.selectedCountry}</div>
 	</div>;
 };
 

@@ -9,6 +9,9 @@ const actions = {
 	setFirstName: (context) =>
 		({ firstName: context.data }),
 
+	setSelectedCountry: (context) =>
+		({ selectedCountry: context.data }),
+
 };
 
 export default actions;

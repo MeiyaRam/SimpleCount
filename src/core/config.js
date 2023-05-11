@@ -8,6 +8,8 @@ const config = {
 		canada: { title: 'Canada' },
 	},
 
+	colors: ['red', 'green', 'blue', 'orange', 'brown', 'purple'],
+
 };
 
 export default config;

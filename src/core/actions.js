@@ -12,6 +12,9 @@ const actions = {
 	setSelectedCountry: (context) =>
 		({ selectedCountry: context.data }),
 
+	setSelectedColor: (context) =>
+		({ selectedColor: context.data }),
+
 };
 
 export default actions;

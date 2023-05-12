@@ -15,6 +15,9 @@ const actions = {
 	setSelectedColor: (context) =>
 		({ selectedColor: context.data }),
 
+	setSelectedCheckBox: (context) =>
+		({ checkedCourse: true }),
+
 };
 
 export default actions;

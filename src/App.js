@@ -5,6 +5,7 @@ import DecreaseCount from './components/DecreaseCount';
 import Input from './components/Input';
 import Select from './components/Select';
 import SelectColor from './components/SelectColor';
+import CheckBox from './components/CheckBox';
 
 const App = (context) => {
 	const { state } = context;
@@ -19,7 +20,9 @@ const App = (context) => {
 		<div>Selected Country: {state.selectedCountry}</div><br/>
 		<SelectColor { ...context }/>
 		<div>Selected Color is :{state.selectedColor}</div>
-		<div style={ { color: state.selectedColor } }>Changing Text Color</div>
+		<div style={ { color: state.selectedColor } }>Changing Text Color
+		</div><br/>
+		<CheckBox { ...context }/>
 	</div>;
 };
 

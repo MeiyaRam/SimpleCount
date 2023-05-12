@@ -3,6 +3,7 @@ const seed = {
 	firstName: '',
 	selectedCountry: '',
 	selectedColor: '',
+	checkedCourse: false,
 };
 
 export default seed;

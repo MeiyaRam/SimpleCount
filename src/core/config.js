@@ -10,6 +10,8 @@ const config = {
 
 	colors: ['red', 'green', 'blue', 'orange', 'brown', 'purple'],
 
+	courses: ['c', 'css', 'html', 'jsx'],
+
 };
 
 export default config;

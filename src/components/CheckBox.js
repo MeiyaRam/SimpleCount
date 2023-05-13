@@ -1,20 +1,17 @@
 import { React } from 'react';
 
 const CheckBox = (context) => {
-	const {
-		actions, state: { checkedCourse },
-	} = context;
+	const { actions, config: { courses }} = context;
 
 	return (
-		<div>
-			<input { ...{
-				type: 'checkbox',
-				value: checkedCourse,
-				onClick: (e) => actions.setSelectedCheckBox(e.target.value),
-			} }
-			/><label>Js React</label>
-		</div>
-
+		courses.map((course, i) =>
+			<div key={ i }>
+				<input { ...{
+					type: 'checkbox',
+					value: course,
+					onClick: (e) => actions.setSelectedCheckBox(e.target.value),
+				} }
+				/><label>{course}</label></div>)
 	);
 };
 

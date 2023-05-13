@@ -1,5 +1,4 @@
 const actions = {
-
 	setIncreaseCount: (context) =>
 		({ count: context.state.count + 1 }),
 
@@ -15,9 +14,14 @@ const actions = {
 	setSelectedColor: (context) =>
 		({ selectedColor: context.data }),
 
-	setSelectedCheckBox: (context) =>
-		({ checkedCourse: true }),
-
+	setSelectedCheckBox: ({ state: { checkedCourse }, data }) =>
+		({
+			checkedCourse: {
+				...checkedCourse,
+				[data]:
+				!checkedCourse[data],
+			},
+		}),
 };
 
 export default actions;
